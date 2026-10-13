@@ -1,9 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         
-        System.out.println("=================================================");
-        System.out.println("   PARTE 1: LAB 07 - MANEJO DE EXCEPCIONES");
-        System.out.println("=================================================");
+       
         
         Druida druida = new Druida("Sylva", 7, 200, 180, 120, "Lobo");
         Nigromante nigromante = new Nigromante("Malachar", 6, 300, 220, 15);
@@ -41,34 +39,32 @@ public class Main {
         motor.mostrarBitacora();
 
         
-        System.out.println("\n\n=================================================");
-        System.out.println("   PARTE 2: LAB 08 - COLECCIONES (GREMIO)");
-        System.out.println("=================================================");
+       
 
         GestionGremio gremio = new GestionGremio();
         
-        // Bloque 1 - ArrayList
+       
         gremio.agregarMiembro(new Druida("Sylva", 10, 300, 100, 50, "Oso"));
         gremio.agregarMiembro(new Nigromante("Malachar", 8, 250, 120, 10));
         gremio.agregarMiembro(new Arquero("Legolas", 6, 150, "Arco", 20, 95));
         gremio.agregarMiembro(new Guerrero("Thorin", 9, 400, "Hacha", 80));
         gremio.eliminarMiembro("Malachar");
         
-        // Bloque 2 - LinkedList
+       
         gremio.encolarSolicitante("Gandalf");
         gremio.encolarSolicitante("Aragorn");
         gremio.atenderSiguiente();
         
-        // Bloque 3 - HashMap
+        
         gremio.agregarItem("Poción de vida", 5);
         gremio.agregarItem("Poción de vida", 3);
         gremio.usarItem("Pergamino de fuego");
         
-        // Bloque 4 - HashSet
+        
         gremio.registrarHabilidad("Curación");
         gremio.registrarHabilidad("Curación"); // Intento duplicado
         
-        // Bloque 5 - Resumen
+        
         gremio.mostrarRoster();
         gremio.mostrarCola();
         gremio.mostrarInventario();
